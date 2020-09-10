@@ -7,5 +7,6 @@ public class AC4 {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa2.vytrack.com/");
+        System.out.println("Hello");
     }
 }
