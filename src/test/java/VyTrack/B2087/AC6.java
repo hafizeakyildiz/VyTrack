@@ -1,15 +1,27 @@
 package VyTrack.B2087;
 
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class AC6 {
+    WebDriver driver;
+    @BeforeMethod
 
-    public static void main(String[] args) {
-        System.out.println("Hello world");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://qa2.vytrack.com/");
-        driver.close();
+    public void setUpMethod() {
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
     }
+    @Test
+    public void VtTrackTest1(){
+        driver.get("https://qa2.vytrack.com/");
+
+    }
+
+
+
+
 }
