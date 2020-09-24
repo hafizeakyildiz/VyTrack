@@ -59,7 +59,7 @@ public class AC3 {
         Thread.sleep(4000);
 
 
-        // gets and clicks on cancel button on create odometer page
+        // gets and clicks on cancel button on create odometer page//
 
         WebElement cancelButton = driver.findElement(By.xpath("//a[@title='Cancel']"));
         cancelButton.click();
